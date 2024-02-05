@@ -1,0 +1,47 @@
+/* .sec1 { 
+    position: absolute;
+    width: 100%; 
+    height: 900px;
+    left: 50%;
+    top:0;
+    transform: translateX(-50%);
+} */
+canvas {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#canvas {
+    z-index: 3;
+}
+#canvas_back {
+    left: calc(50% - 2px);
+}
+
+.line_container {
+    width: 100%;
+    height: 100%;
+}
+
+.line, .line_mid, .line_curve_bot, .line_curve_top {
+    width: 3px;
+    height: 65px;
+    background: #fff;
+    opacity: 0.5;
+
+    position: absolute; 
+    z-index: 3;
+}
+
+.top{ z-index: 1;}
+
+.line_curve_bot, .line_curve_top { 
+    transform-origin: center -98px;
+}
+
+@media screen and (max-width: 1920px) {
+    .sec1 {
+        width: 1920px;
+    }
+}

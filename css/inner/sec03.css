@@ -1,0 +1,106 @@
+#sec03{width: 100%; padding-bottom: 10vh; position: relative; background-color: var(--sec03);}
+
+.sec03{display: flex;}
+.sec03 .pro_phone{width: 30%; position: sticky; left: 90px; top: 120px; height: 710px;}
+
+.sec03 .pro_file{width: 60%; cursor: default; margin-top: 7%;}
+.sec03 .pro_file .pp{background-color: var(--white); padding: 3% 5%; border-radius: 20px;}
+.sec03 .pro_file .pp .tit{ margin-bottom: 30px;}
+.sec03 .pro_file .pp .tit h2{font-weight: bold; font-size: 42px;}
+.sec03 .pro_file .pp .tit p{color: var(--black700); font-size: 16px;}
+
+
+/* 웹 포트폴리오 */
+.sec03 .pro_file .pp1{margin-bottom: 7%;}
+.sec03 .pro_file .pp1 article{margin-bottom: 14%;}
+.sec03 .pro_file .pp1 article:last-child{margin-bottom: 2%;}
+.sec03 .pro_file .pp1 article .cont{display: flex;}
+.sec03 .pro_file .pp1 article .cont > p{width: 600px;}
+.sec03 .pro_file .pp1 article .cont > p img{width: 100%}
+.sec03 .pro_file .pp1 article .cont .txt{width: calc(100% - 600px); padding-left: 3%;}
+.sec03 .pro_file .pp1 article .cont .txt .in_tit{padding-top: 4%; font-size: 38px; color: var(--black900); font-weight: bold;}
+.sec03 .pro_file .pp1 article:nth-of-type(1) .cont .txt .in_tit{text-shadow: 0px 2px 3px var(--port01_C);}
+.sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_tit{text-shadow: 0px 2px 3px var(--port02_C); padding-top: 0;}
+.sec03 .pro_file .pp1 article:nth-of-type(3) .cont .txt .in_tit{text-shadow: 0px 2px 3px var(--port03_C);}
+.sec03 .pro_file .pp1 article .cont .txt .in_tit em{color: var(--black700); margin-right: 10px;}
+.sec03 .pro_file .pp1 article .cont .txt .in_txt{font-size: 16px; font-family: var(--font_NUM);}
+.sec03 .pro_file .pp1 article .cont .txt .in_txt > p{font-size: 19px; font-weight: bold; margin-bottom: 14px;}
+.sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li{margin-bottom: 5px; font-weight: bold;}
+.sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li em{padding: 2px 7px; display: inline-block; background-color: var(--active); border-radius: 10px;}
+.sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li ul{padding-left: 10px; margin-top: 5px;}
+.sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li:last-child{margin-top: 10px;}
+.sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li ul li{color: var(--black700); font-size: 16px;}
+.sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li ul li i{color: var(--black20); margin-right: 2px;}
+.sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li ul li:hover,
+.sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li ul li:hover i{color: var(--black900);}
+
+.sec03 .pro_file .pp1 article .cont .in_btn{font-family: var(--font_NUM); margin-top: 7%; text-align: center;}
+.sec03 .pro_file .pp1 article:nth-of-type(2) .cont .in_btn{margin-top: 4%;}
+.sec03 .pro_file .pp1 article .cont .in_btn a{display: inline-block; background-color: var(--active); padding: 10px 40px; border-radius: 15px; font-weight: bold; transition: all 0.3s;}
+.sec03 .pro_file .pp1 article .cont .in_btn a:hover{background-color: var(--active_on);}
+
+
+/* 기타 포트폴리오 */
+.sec03 .pp2{position: relative; margin-bottom: 7%;}
+.sec03 .pp2 .in_tittle{font-size: 20px; text-align: center;}
+.sec03 .pp2 .in_tittle p{text-shadow: 0px 0px 2px var(--black500); margin-bottom: 30px;}
+
+.sec03 .pp2 .inner{display: flex; justify-content: space-between; margin-bottom: 3vh;}
+.sec03 .pp2 .inner ul li{position: relative; width: 300px; height: 300px; border-radius: 10px;  overflow: hidden; box-shadow: 0px 2px 4px var(--black500);}
+.sec03 .pp2 .inner ul li img{width: 100%; height: 100%; border-radius: 10px;}
+.sec03 .pp2 .inner ul li .aa{position: relative; }
+.sec03 .pp2 .inner ul li .aa::before{
+    width: 100%; height: 100%;
+    background-color: #bbdefb; border-radius: 10px;
+    position: absolute; left: 0; top: 0;
+    text-align: center; line-height: 300px;
+    font-size: 16px;
+    transition: all 0.6s;
+}
+.sec03 .pp2 .inner ul li.page .aa::before{content: "상세 페이지";}
+.sec03 .pp2 .inner ul li.sns .aa::before{content: "SNS 홍보용";}
+.sec03 .pp2 .inner ul li.cos .aa::before{content: "기타 디자인";}
+.sec03 .pp2 .inner ul li .aa:hover::before{top: 120%;}
+
+.sec03 .pp2 .inner ul li .aa::after{
+    content: "Click!";
+    width: 100%; height: 100%;
+    position: absolute; left: 0; top: 14px;
+    color: var(--black900); text-shadow: 0px 1px 2px var(--active_on);
+    font-size: 20px;
+    text-align: center; font-weight: bold;
+    opacity: 0; transition: all 0.2s;
+}
+.sec03 .pp2 .inner ul li .aa:hover::after{opacity: 1;}
+
+
+
+
+@media(max-width:1700px){
+    .sec03 .pro_file{width: 65%;}
+    .sec03 .pro_file .pp1 article .cont > p{width: 500px;}
+    .sec03 .pro_file .pp1 article .cont .in_btn a{width: 49%; padding: 8px 0px;}
+}
+@media(max-width:1600px){
+    .sec03 .pro_file .pp1 article .cont .in_btn a{width: 100%;}
+    .sec03 .pro_file .pp1 article .cont .in_btn a:first-child{margin-bottom: 2%;}
+    .sec03 .pp2 .inner ul li{width: 250px; height: 300px;}
+}
+@media(max-width:1460px){
+    .sec03 .pro_file .pp{padding: 3% 3% 3% 5%;}
+    .sec03 .pro_phone{left: 18px; top: 100px; width: 32%;}
+    .sec03 .pro_phone img{width:380px; height: 690px;}
+    .sec03 .pro_file .pp1 article .cont > p{width: 560px;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_tit{padding-top: 0%; font-size: 36px;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li span{display: block;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > p{font-size: 18px; line-height: 1.5;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > p em{display: block;}
+    .sec03 .pp2 .inner ul li{width: 240px; height: 250px;}
+}
+@media(max-width:1380px){
+    /* .sec03 .pro_phone{width: 30%;} */
+    /* .sec03 .pro_file .pp{padding: 3% 0% 3% 5%;} */
+}
+@media(max-width:1340px){
+    
+}

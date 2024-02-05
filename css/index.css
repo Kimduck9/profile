@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+@import "./inner/header.css";
+@import "./inner/sec01.css";
+@import "./inner/sec02.css";
+@import "./inner/sec03.css";
+@import "./inner/sec04.css";
+
+
+#wrap{width: 100%; position: relative; background-color: var(--mainBG);}

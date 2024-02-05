@@ -1,0 +1,71 @@
+#sec02{width: 100%; height: 900px; background-color: var(--sec02); position: relative;}
+.sec02 .info{
+    width: calc(100% / 2);
+    float: left;
+    height: 100%;
+    padding-top: 6%;
+    cursor: default;
+}
+.sec02 .info h2{font-weight: bold; font-size: 40px;}
+.sec02 .info h2{text-shadow: 0px 4px 2px var(--active_on);}
+
+
+.sec02 .left{padding-left: 7%;}
+.sec02 .left .me2{margin-top: 5%;}
+.sec02 .left .me .txt{color: var(--black900); font-family: var(--font_NUM); line-height: 1.6;}
+.sec02 .left .me .txt span{display: block; font-size: 16px; text-shadow: 0px 0px 1px var(--black300);}
+.sec02 .left .me .txt span.yeah{text-shadow: 0px 0px 1px var(--port02_C); font-weight: bold; font-size: 18px; padding: 1% 0;}
+
+.sec02 .right{text-align: right; padding-right: 8%;}
+.sec02 .right .txt > ul > li{margin-bottom: 24px;}
+.sec02 .right .txt > ul > li > b{
+    font-size: 22px; 
+    letter-spacing: -0.8px;
+    color: var(--black10);
+    text-shadow: 0px 1px 1px var(--port02_C);
+}
+.sec02 .right .txt > ul > li ul li{font-size: 17px; font-family: var(--font_NUM);}
+.sec02 .right .txt > ul > li .Skill{transform-origin: right;}
+.sec02 .right .txt > ul > li .Skill li{font-size: 15px; font-family: var(--font_ENG);}
+.sec02 .right .txt > ul > li .Skill li span{display: inline-block; width: 300px; background-color: transparent; border-radius: 30px; padding: 1px 10px 3px 0px; position: relative; border: 1px solid var(--black300); overflow: hidden; cursor: pointer;}
+.sec02 .right .txt > ul > li .Skill li span::before{
+    content: "";
+    width: 0%; height: 100%;
+    position: absolute; right: -50%; top: 0;
+    background-color: var(--active); border-radius: 30px;
+    padding: 1px 7% 0 0;
+    transition: all 0.6s;
+}
+.sec02 .right .txt > ul > li .Skill li.li1 span::before{content: "HTML : 100%";}
+.sec02 .right .txt > ul > li .Skill li.li2 span::before{content: "CSS : 100%";}
+.sec02 .right .txt > ul > li .Skill li.li3 span::before{content: "React : 80%";}
+.sec02 .right .txt > ul > li .Skill li.li4 span::before{content: "JQuery : 90%";}
+.sec02 .right .txt > ul > li .Skill li.li5 span::before{content: "JavaScript : 85%";}
+.sec02 .right .txt > ul > li .Skill li.li6 span::before{content: "Illustrator : 80%";}
+.sec02 .right .txt > ul > li .Skill li.li7 span::before{content: "Photoshop : 95%";}
+.sec02 .right .txt > ul > li .Skill li.li8 span::before{content: "Figma 90%";}
+
+.sec02 .right .txt > ul > li .Skill li span:hover::before{color: var(--black); right: 0; font-weight: bold;}
+.sec02 .right .txt > ul > li .Skill li.li1 span:hover::before,
+.sec02 .right .txt > ul > li .Skill li.li2 span:hover::before{width: 100%;}
+.sec02 .right .txt > ul > li .Skill li.li3 span:hover::before,
+.sec02 .right .txt > ul > li .Skill li.li6 span:hover::before{width: 80%;}
+.sec02 .right .txt > ul > li .Skill li.li4 span:hover::before,
+.sec02 .right .txt > ul > li .Skill li.li8 span:hover::before{width: 90%;}
+.sec02 .right .txt > ul > li .Skill li.li5 span:hover::before{width: 85%;}
+.sec02 .right .txt > ul > li .Skill li.li7 span:hover::before{width: 95%;}
+
+
+.sec02 .p_port{width:400px; height: 710px; position: absolute; left:51%; top:110px; transform: translateX(-50%); z-index: 2;}
+.sec02 .p_port img{position: absolute; left: 0; top: 0;}
+
+
+
+
+@media(max-width:1460px){
+    .sec02 .left{padding-left: 2%;}
+    .sec02 .right{padding-right: 4%;}
+    .sec02 .p_port{width:380px; height: 690px;}
+    .sec02 .p_port img{width: 100%; height: 100%;}
+    .sec02 .left .me .txt span em{font-size: 15px;}
+}
