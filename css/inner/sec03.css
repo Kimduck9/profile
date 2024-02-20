@@ -210,8 +210,10 @@
     .sec03 .pro_file .pp1 article .cont > p{width: 400px;}
     .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hi ul,
     .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hihi ul{left: 60px;}
+    .sec03 .pro_file .pp1 article:nth-of-type(1) .cont .txt .in_txt > ul > li.hihi,
     .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li.hihi{margin-bottom: 40px;}
-    .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li.hihi ul{left: 0px; top: 30px; width: 100%; margin-top: 0;}
+    .sec03 .pro_file .pp1 article:nth-of-type(1) .cont .txt .in_txt > ul > li.hihi ul,
+    .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li.hihi ul{left: 0px; top: 30px; width: 100%; margin-top: 5px;}
     .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li ul li i{ margin-right: 0px;}
 }
 
@@ -237,10 +239,12 @@
     .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hi ul,
     .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hihi ul{flex-direction: column;}
     .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li.hi{margin-bottom: 80px;}
-    .sec03 .pro_file .pp1 article:nth-of-type(1) .cont .txt .in_txt > ul > li.hihi{margin-bottom: 120px;}
-    .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li.hihi{margin-bottom: 140px;}
-    .sec03 .pro_file .pp1 article:nth-of-type(3) .cont .txt .in_txt > ul > li.hihi{margin-bottom: 100px;}
-    .sec03 .pro_file .pp1 article:nth-of-type(2n-1) .cont .txt .in_txt > ul > li.hihi ul{left: 0px; top: 30px; width: 100%; margin-top: 0;}
+    .sec03 .pro_file .pp1 article:nth-of-type(1) .cont .txt .in_txt > ul > li.hihi,
+    .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li.hihi{margin-bottom: 135px;}
+    .sec03 .pro_file .pp1 article:nth-of-type(3) .cont .txt .in_txt > ul > li.hihi{margin-bottom: 95px;}
+    .sec03 .pro_file .pp1 article:nth-of-type(1) .cont .txt .in_txt > ul > li.hihi ul,
+    .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li.hihi ul{margin-top: 0;}
+    .sec03 .pro_file .pp1 article:nth-of-type(3) .cont .txt .in_txt > ul > li.hihi ul{left: 0px; top: 30px; width: 100%; margin-top: 0;}
 
 
     .sec03 .pp2 .inner ul > li{width: 320px; height: 200px;}
