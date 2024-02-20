@@ -55,8 +55,12 @@
     .sec01 .img_box img{width: 98%; left: 50%;}
 }
 
+@media(max-width:1030px){
+    #sec01{height: 940px;} 
+}
+
 @media(max-width:780px){
-    #sec01{height: 90vh;} 
+    #sec01{height: 900px;} 
     .sec01 .phone{width:340px; height: auto;}
     .sec01 .phone .phone_in .p1 .jimoon{width: 65px;}
     .sec01 .phone .phone_in .watch .time{font-size: 55px;}
@@ -65,7 +69,7 @@
 }
 
 @media(max-width:700px){
-    #sec01{overflow-x: hidden;}
+    #sec01{overflow-x: hidden; height: 850px;}
     .sec01 .phone{width:300px;}
     .sec01 .phone .phone_in .p1 .jimoon{width: 55px;}
     .sec01 .phone .phone_in .watch .time{font-size: 50px;}
@@ -74,7 +78,7 @@
 }
 
 @media(max-width:570px){
-    #sec01{height: 80vh;} 
+    #sec01{height: 750px;} 
     .sec01 .phone{width:260px;}
     @keyframes phone{
         0% {top:-1000px;}
@@ -94,7 +98,7 @@
 }
 
 @media(max-width:450px){
-    #sec01{height: 75vh;} 
+    #sec01{height: 700px;} 
     .sec01 .phone{width:230px;}
     .sec01 .phone .phone_in .p1 .jimoon{width: 40px;}
     .sec01 .phone .phone_in .watch .time{font-size: 40px;}
@@ -103,7 +107,7 @@
 }
 
 @media(max-width:390px){
-    #sec01{height: 65vh;} 
+    #sec01{height: 600px;} 
     .sec01 .phone{width:200px;}
     @keyframes phone{
         0% {top:-1000px;}
@@ -116,7 +120,7 @@
 }
 
 @media(max-width:340px){
-    #sec01{height: 60vh;} 
+    #sec01{height: 500px;}
     .sec01 .phone{width:180px;}
     .sec01 .phone .phone_in .p1 .jimoon{width: 30px;}
     .sec01 .phone .phone_in .watch .time{font-size: 33px;}

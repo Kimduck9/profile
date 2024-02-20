@@ -93,7 +93,7 @@
 
 }
 @media(max-width:1024px){
-    #sec02{height: 140vh;}
+    #sec02{height: 1300px;}
     .sec02{height: 100%;}
     .sec02 .info{width: 100%; height: 50%;}
     .sec02 .left{padding-left: 7%;}
@@ -114,7 +114,7 @@
 }
 
 @media(max-width:780px){
-    #sec02{height: 130vh;}
+    #sec02{height: 1250px;}
     .sec02 .info{height: auto; padding-left: 6%;}
     .sec02 .info h2{font-size: 32px;}
     .sec02 .left .me .txt span,
@@ -122,7 +122,7 @@
     .sec02 .p_port{left: 62%; width:260px; height: 480px;}
 }
 @media(max-width:640px){
-    #sec02{height: 115vh;}
+    #sec02{height: 1050px;}
     .sec02 .p_port{display: none;}
     .sec02 .left .me1 .txt span:nth-of-type(3),
     .sec02 .left .me1 .txt span:nth-of-type(4){display: inline-block;}
@@ -135,14 +135,14 @@
 }
 
 @media(max-width:550px){
-    #sec02{height: 110vh;}
+    #sec02{height: 1030px;}
     .sec02 .info{height: auto; padding-left: 5%;}
     .sec02 .left .me2 ul li{width: 48%;}
     .sec02 .left .me2 ul li:nth-of-type(2n){margin-left: 2%;}
 }
 
 @media(max-width:510px){
-    #sec02{height: 130vh;}
+    #sec02{height: 1250px;}
     .sec02 .left .me2 ul li{width: 100%;}
     .sec02 .left .me2 ul li:nth-of-type(2n){margin-left: 0%;}
     .sec02 .right .txt ul{margin-bottom: 3%;}
@@ -151,7 +151,7 @@
 }
 
 @media(max-width:500px){
-    #sec02{height: 120vh;}
+    #sec02{height: 1150px;}
     .sec02 .info h2{font-size: 28px;}
     .sec02 .left .me .txt span{font-size: 13px;}
     .sec02 .left .me .txt span b{font-size: 14px;}
