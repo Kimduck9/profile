@@ -2,10 +2,14 @@
 
 .sec03{display: flex;}
 .sec03 .pro_phone{width: 30%; position: sticky; left: 90px; top: 120px; height: 710px;}
+.sec03 .pro_phone .boxx{position: absolute; left: 40px; bottom: 20%; text-align: center; width: 52%;}
+.sec03 .pro_phone .boxx a{display: inline-block; width: 80px; margin: 0 25px;}
+.sec03 .pro_phone .boxx a img{width: 100%; filter: grayscale(0.7); transition: all 0.3s;}
+.sec03 .pro_phone .boxx a:hover img{filter: grayscale(0); transform: scale(1.05);}
 
 .sec03 .pro_file{width: 60%; cursor: default; margin-top: 7%;}
 .sec03 .pro_file .pp{background-color: var(--white); padding: 3% 5%; border-radius: 20px;}
-.sec03 .pro_file .pp .tit{ margin-bottom: 30px;}
+.sec03 .pro_file .pp .tit{margin-bottom: 30px;}
 .sec03 .pro_file .pp .tit h2{font-weight: bold; font-size: 42px;}
 .sec03 .pro_file .pp .tit p{color: var(--black700); font-size: 16px;}
 
@@ -25,6 +29,8 @@
 .sec03 .pro_file .pp1 article .cont .txt .in_tit em{color: var(--black700); margin-right: 10px;}
 .sec03 .pro_file .pp1 article .cont .txt .in_txt{font-size: 16px; font-family: var(--font_NUM);}
 .sec03 .pro_file .pp1 article .cont .txt .in_txt > p{font-size: 19px; font-weight: bold; margin-bottom: 14px;}
+.sec03 .pro_file .pp1 article .cont .txt .in_txt > span{font-size: 15px; display: block; margin-bottom: 3%;}
+.sec03 .pro_file .pp1 article .cont .txt .in_txt > span em{display: block;}
 .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li{margin-bottom: 5px; font-weight: bold;}
 .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li em{padding: 2px 7px; display: inline-block; background-color: var(--active); border-radius: 10px;}
 .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li ul{padding-left: 10px; margin-top: 5px;}
@@ -46,6 +52,7 @@
 .sec03 .pp2 .in_tittle p{text-shadow: 0px 0px 2px var(--black500); margin-bottom: 30px;}
 
 .sec03 .pp2 .inner{display: flex; justify-content: space-between; margin-bottom: 3vh;}
+.sec03 .pp2 .inner ul span{display: none;}
 .sec03 .pp2 .inner ul li{position: relative; width: 300px; height: 300px; border-radius: 10px;  overflow: hidden; box-shadow: 0px 2px 4px var(--black500);}
 .sec03 .pp2 .inner ul li img{width: 100%; height: 100%; border-radius: 10px;}
 .sec03 .pp2 .inner ul li .aa{position: relative; }
@@ -66,7 +73,7 @@
     content: "Click!";
     width: 100%; height: 100%;
     position: absolute; left: 0; top: 14px;
-    color: var(--black900); text-shadow: 0px 1px 2px var(--active_on);
+    color: var(--black900); text-shadow: 0px 1px 1px var(--active_on);
     font-size: 20px;
     text-align: center; font-weight: bold;
     opacity: 0; transition: all 0.2s;
@@ -77,30 +84,185 @@
 
 
 @media(max-width:1700px){
+    .sec03 .pro_phone{left: 50px; top: 100px; height: 710px;}
+    .sec03 .pro_phone .boxx{left: 40px; bottom: 20%; width: 60%;}
+    .sec03 .pro_phone .boxx a{width: 75px; margin: 0 20px;}
     .sec03 .pro_file{width: 65%;}
     .sec03 .pro_file .pp1 article .cont > p{width: 500px;}
+    .sec03 .pro_file .pp1 article .cont .txt{width: calc(100% - 500px);}
     .sec03 .pro_file .pp1 article .cont .in_btn a{width: 49%; padding: 8px 0px;}
 }
+
+@media(max-width:1640px){
+    .sec03 .pro_phone{left: 44px; top: 100px; height: 710px;}
+}
+
 @media(max-width:1600px){
+    .sec03 .pro_phone .boxx{left:25px; bottom: 20%; width: 70%;}
+    .sec03 .pro_phone .boxx a{width: 70px; margin: 0 20px;}
+    .sec03 .pro_phone{left: 40px; top: 100px; height: 710px;}
     .sec03 .pro_file .pp1 article .cont .in_btn a{width: 100%;}
     .sec03 .pro_file .pp1 article .cont .in_btn a:first-child{margin-bottom: 2%;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > span em{display: inline;}
     .sec03 .pp2 .inner ul li{width: 250px; height: 300px;}
 }
+
+@media(max-width:1550px){
+    .sec03 .pro_phone{left: 30px; top: 100px; height: 710px;}
+}
+
+@media(max-width:1500px){
+    .sec03 .pro_phone{left: 25px; top: 100px; height: 710px;}
+}
+
 @media(max-width:1460px){
+    .sec03 .pro_phone .boxx{left:30px; bottom: 22%; width: 70%;}
+    .sec03 .pro_phone .boxx a{width: 65px; margin: 0 20px;}
+    .sec03 .pro_file{width: 68%;}
     .sec03 .pro_file .pp{padding: 3% 3% 3% 5%;}
-    .sec03 .pro_phone{left: 18px; top: 100px; width: 32%;}
-    .sec03 .pro_phone img{width:380px; height: 690px;}
+    .sec03 .pro_phone{left: 28px; top: 100px; width: 30%;}
+    .sec03 .pro_phone > img{width:380px; height: 690px;}
     .sec03 .pro_file .pp1 article .cont > p{width: 560px;}
-    .sec03 .pro_file .pp1 article .cont .txt .in_tit{padding-top: 0%; font-size: 36px;}
+    .sec03 .pro_file .pp1 article .cont .txt{width: calc(100% - 560px);}
+    .sec03 .pro_file .pp1 article .cont .txt .in_tit{padding-top: 0%; font-size: 35px;}
     .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li span{display: block;}
     .sec03 .pro_file .pp1 article .cont .txt .in_txt > p{font-size: 18px; line-height: 1.5;}
     .sec03 .pro_file .pp1 article .cont .txt .in_txt > p em{display: block;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > span{font-size: 14px;}
     .sec03 .pp2 .inner ul li{width: 240px; height: 250px;}
+    .sec03 .pp2 .inner ul li .aa::before{line-height: 250px;}
 }
-@media(max-width:1380px){
-    /* .sec03 .pro_phone{width: 30%;} */
-    /* .sec03 .pro_file .pp{padding: 3% 0% 3% 5%;} */
+
+@media(max-width:1350px){
+    .sec03 .pro_phone .boxx{left:42px; bottom: 22%; width: 70%;}
+    .sec03 .pro_phone .boxx a{width: 65px; margin: 0 20px;}
 }
-@media(max-width:1340px){
-    
+
+@media(max-width:1280px){
+    #sec03{padding-bottom: 0vh;}
+    .sec03 .pro_phone{width: 5%;}
+    .sec03 .pro_file{width: 90%;}
+    .sec03 .pro_file .pp .tit h2{font-size: 38px;}
+    .sec03 .pro_file .pp .tit p{font-size: 15px;}
+    .sec03 .pro_file .pp1 article .cont > p{width: 500px;}
+    .sec03 .pro_file .pp1 article .cont .txt{width: calc(100% - 500px);}
+    .sec03 .pro_file .pp1 article .cont .txt .in_tit{font-size: 32px;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > p em,
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li span{display: inline-block;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt{font-size: 15px;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > p{margin-bottom: 3%;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li{font-size: 15px;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li em{padding: 2px 7px;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li ul li{font-size: 15px;}
+    .sec03 .pro_file .pp1 article .cont .in_btn a{width: 49%; padding: 8px 0px;}
+}
+
+@media(max-width:980px){
+    .sec03 .pro_phone{width: 2%;}
+    .sec03 .pro_file{width: 96%;}
+    .sec03 .pro_file .pp1 article .cont > p{width: 100%;}
+    .sec03 .pro_file .pp1 article .cont .txt{width: 100%; padding-left: 5%;}
+    .sec03 .pro_file .pp1 article .cont .in_btn a{width: 100%; font-size: 14px; padding: 7px 0px;}
+    .sec03 .pp2 .inner ul li{width: 210px; height: 220px;}
+    .sec03 .pp2 .inner ul li .aa::before{line-height: 220px;}
+}
+
+@media(max-width:780px){
+    .sec03 .pro_file .pp .tit h2 {font-size: 32px;}
+    .sec03 .pro_file .pp .tit p{font-size: 14px;}
+    .sec03 .pro_file .pp1 article .cont{display: flex; flex-direction: column; margin-top: 100px;}
+    .sec03 .pro_file .pp1 article .cont:first-child{margin-top: 0;}
+    .sec03 .pro_file .pp1 article .cont > p{width: 500px; margin: 0 auto; margin-bottom: 5%}
+    .sec03 .pro_file .pp1 article .cont .txt{padding-left: 0;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_tit{font-size: 30px; text-align: center;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > p{line-height: 1; margin-bottom: 1.5%; text-align: center;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > span{margin-bottom: 2%; text-align: center;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li,
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li ul li{font-size: 14px;}
+
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hi,
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hihi{position: relative;}
+
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hi ul,
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hihi ul{display: flex; justify-content: space-between; position: absolute; left: 65px; top: -2px; width: calc(100% - 100px);}
+
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li em{padding: 3px 10px;}
+    .sec03 .pro_file .pp1 article .cont .in_btn,
+    .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .in_btn{margin-top: 1.5%;}
+    .sec03 .pro_file .pp1 article .cont .in_btn a{width:45%; font-size: 14px; padding: 8px 0px 10px 0px;}
+
+
+    .sec03 .pp2 .inner{flex-direction: column; transform: translateX(-2%);}
+    .sec03 .pp2 .inner ul{position: relative; margin: 0 auto;}
+    .sec03 .pp2 .inner ul.in_page{margin-top: 30px;}
+    .sec03 .pp2 .inner ul > li{margin-bottom: 100px; width: 380px; height: 250px;}
+    .sec03 .pp2 .inner ul.in_cos li{margin-bottom: 0;}
+    .sec03 .pp2 .inner ul li .aa::before{line-height: 250px;}
+    .sec03 .pp2 .inner ul span{
+        display: block; font-size: 14px;
+        position: absolute; left: 0%; top: -28px;
+        width: 100%; text-align: center;
+    }    
+}
+
+
+@media(max-width:640px){
+    .sec03 .pro_file .pp1 article .cont > p{width: 400px;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hi ul,
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hihi ul{left: 60px;}
+    .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li.hihi{margin-bottom: 40px;}
+    .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li.hihi ul{left: 0px; top: 30px; width: 100%; margin-top: 0;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li ul li i{ margin-right: 0px;}
+}
+
+@media(max-width:580px){
+    .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li.hi{margin-bottom: 40px;}
+    .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li.hi ul{left: 0px; top: 30px; width: 100%; margin-top: 0;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hihi ul{width: calc(100% - 90px);}
+
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > span{font-size: 13px; margin-bottom: 4%;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li,
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li ul li{font-size: 13px;}
+}
+@media(max-width:520px){
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hihi ul{width: calc(100% - 60px); left: 55px;}
+}
+@media(max-width:480px){
+    .sec03 .pro_file .pp1 article{margin-bottom: 22%;}
+    .sec03 .pro_file .pp1 article .cont > p{width: 320px;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_tit{font-size: 26px;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > p{font-size: 16px;}
+    .sec03 .pro_file .pp1 article .cont .in_btn{margin-top: 2%;}
+    .sec03 .pro_file .pp1 article .cont .in_btn a{width:45%; font-size: 13px;}
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hi ul,
+    .sec03 .pro_file .pp1 article .cont .txt .in_txt > ul > li.hihi ul{flex-direction: column;}
+    .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li.hi{margin-bottom: 80px;}
+    .sec03 .pro_file .pp1 article:nth-of-type(1) .cont .txt .in_txt > ul > li.hihi{margin-bottom: 120px;}
+    .sec03 .pro_file .pp1 article:nth-of-type(2) .cont .txt .in_txt > ul > li.hihi{margin-bottom: 140px;}
+    .sec03 .pro_file .pp1 article:nth-of-type(3) .cont .txt .in_txt > ul > li.hihi{margin-bottom: 100px;}
+    .sec03 .pro_file .pp1 article:nth-of-type(2n-1) .cont .txt .in_txt > ul > li.hihi ul{left: 0px; top: 30px; width: 100%; margin-top: 0;}
+
+
+    .sec03 .pp2 .inner ul > li{width: 320px; height: 200px;}
+    .sec03 .pp2 .inner ul li .aa::before{line-height: 200px;}
+    .sec03 .pp2 .inner ul li .aa::after{font-size: 18px;}
+    .sec03 .pp2 .inner ul span{font-size: 13px;}    
+}
+
+@media(max-width:420px){
+    .sec03 .pro_file .pp1 article .cont > p{width: 280px;}
+}
+
+@media(max-width:380px){
+    .sec03 .pp2 .inner ul > li{width: 290px; height: 180px;}
+    .sec03 .pp2 .inner ul li .aa::before{line-height: 180px;}
+    .sec03 .pp2 .inner ul span{font-size: 12px;}    
+}
+
+@media(max-width:340px){
+    .sec03 .pro_file .pp1 article .cont > p{width: 240px;}
+
+    .sec03 .pp2 .inner ul > li{width: 270px; height: 160px;}
+    .sec03 .pp2 .inner ul li .aa::before{line-height: 160px;}
+    .sec03 .pp2 .inner ul span{font-size: 11px;}    
 }

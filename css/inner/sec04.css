@@ -1,8 +1,8 @@
 #sec04{width: 100%; height: 80vh; padding-bottom: 10vh; position: relative; background-color: var(--sec02);}
 
-.sec04 .text{padding-top: 16vh; text-align: center;}
-.sec04 .text p{font-size: 32px;margin-bottom: 2%;}
-.sec04 .text span{font-size: 22px;margin-bottom: 2%;}
+.sec04 .text{padding-top: 16vh; text-align: center; cursor: default;}
+.sec04 .text p{font-size: 32px; margin-bottom: 2%;}
+.sec04 .text span{font-size: 22px; margin-bottom: 2%;}
 .sec04 .text .aro_box{margin-top: 30px;}
 .sec04 .text .aro_box img{margin: 0 auto; animation: hi 3s linear infinite;}
 .sec04 .text .aro_box img:nth-of-type(1){animation-delay: 0.5s;}
@@ -19,10 +19,52 @@
 .sec04 .btn a img{width: 100%; filter: grayscale(0.6); transition: all 0.3s;}
 .sec04 .btn a:hover img{filter: grayscale(0);}
 
-.sec04 .copy{position: absolute; left: 50%; bottom: 1%; transform: translateX(-50%);}
-.sec04 .copy p{color: var(--black300);}
+.sec04 .copy{position: absolute; left: 50%; bottom: 1%; transform: translateX(-50%); color: var(--black500); width: 100%; text-align: center;}
 
 
-@media(max-width:1460px){
-    
+
+
+
+
+@media(max-width:1280px){
+    .sec04 .text p{font-size:28px;}
+    .sec04 .text span{font-size: 18px;}
+    .sec04 .text .aro_box img{width: 20px; margin-bottom: 4px;}
+    .sec04 .btn a{width: 100px;}
+    .sec04 .copy{font-size: 14px;}
+}
+
+@media(max-width:780px){
+    .sec04 .copy{font-size: 12px; bottom: 2%;}
+    .sec04 .btn{justify-content: space-between; padding: 0 15%; padding-top: 5%;}
+    .sec04 .btn a{width: 90px;}
+}
+
+@media(max-width:545px){
+    .sec04 .text p{font-size:26px;}
+    .sec04 .text span{font-size: 18px;}
+    .sec04 .text .aro_box{margin-top: 50px;}
+    .sec04 .text .aro_box img{width: 24px; margin-bottom: 8px;}
+    .sec04 .btn{justify-content: space-between; padding: 0 10%; padding-top: 8%;}
+    .sec04 .btn a{width: 80px;}
+}
+
+@media(max-width:480px){
+    .sec04 .text{padding-top: 10vh;}
+    .sec04 .text p{font-size:22px;}
+    .sec04 .text span{font-size: 16px;}
+    .sec04 .text .aro_box{margin-top: 40px;}
+    .sec04 .text .aro_box img{width: 23px; margin-bottom: 7px;}
+    .sec04 .btn{flex-direction: column; padding-top: 5%;}
+    .sec04 .btn a{width: 75px; margin: 0 auto; margin-bottom: 50px;}
+    .sec04 .btn a:last-child{margin-bottom: 0;}
+}
+
+@media(max-width:405px){
+    .sec04 .text p{font-size:18px; margin-bottom: 1%}
+    .sec04 .text span{font-size: 15px;}
+    .sec04 .text .aro_box{margin-top: 40px;}
+    .sec04 .text .aro_box img{width: 23px; margin-bottom: 7px;}
+    .sec04 .btn{flex-direction: column; padding-top: 10%;}
+    .sec04 .btn a{width: 70px; margin-bottom: 60px;}
 }

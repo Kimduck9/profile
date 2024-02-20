@@ -30,47 +30,77 @@ $(function(){
 
     //sec01 : 핸드폰 스크롤
     $(window).scroll(function(){
-       let wScroll = $(window).scrollTop();
-      
-        if(wScroll >= sec01_Top){
-            $('.sec01 .phone').css({
-                top: wScroll + 170,
-                animation:'none'
-            });
-        }
+        winW = $(window).outerWidth();
+
+        if(winW > 1280){
+            let wScroll = $(window).scrollTop();
+            
+            if(wScroll >= sec01_Top){
+                $('.sec01 .phone').css({
+                    top: wScroll + 170,
+                    animation:'none'
+                });
+            }
+
+            if(wScroll >= sec02_Top - 100){
+                $('.sec01 .phone').css('display','none')          
+            }else{
+                $(".sec01 .phone").css('display','block')
+            }
+
+            if(wScroll >= sec02_Top + 100){
+                $('.sec02 .p_port').css({
+                    position : 'absolute',
+                    top: '122%',
+                    left:'15%',
+                    transition: 'all 4s'
+                });
+            }else{
+                $('.sec02 .p_port').css({
+                    animation:'none',
+                    top : '110px',
+                    left : '51%',
+                    transform: 'translateX(-50%)',
+                    transition: 'all 1s'
+                });
+            }
+
+            if(wScroll >= sec03_Top + 100){
+                $('.sec02 .p_port').css('display','none')   
+                $('.sec03 .pro_phone img').css('display','block')
+            }else{
+                $('.sec02 .p_port').css('display','block')   
+                $('.sec03 .pro_phone img').css('display','none')   
     
-        if(wScroll >= sec02_Top - 100){
-            // console.log(sec02_Top)
-            $('.sec01 .phone').css('display','none')          
+            }
         }else{
-            $(".sec01 .phone").css('display','block')
-        }
-
-        if(wScroll >= sec02_Top + 100){
-            $('.sec02 .p_port').css({
-                position : 'absolute',
-                top: '122%',
-                left:'15%',
-                transition: 'all 4s'
-            });
-        }else{
-            $('.sec02 .p_port').css({
-                animation:'none',
-                top : '110px',
-                left : '51%',
-                transform: 'translateX(-50%)',
-                transition: 'all 1s'
-            });
-        }
-
-        if(wScroll >= sec03_Top + 100){
-            $('.sec02 .p_port').css('display','none')   
-            $('.sec03 .pro_phone img').css('display','block')
-        }else{
-            $('.sec02 .p_port').css('display','block')   
+            // $('.sec02 .p_port').css('display','none')  
             $('.sec03 .pro_phone img').css('display','none')   
-
         }
+    });
+
+    $(window).scroll(function(){
+        winW = $(window).outerWidth();
+        if(winW <= 1024){
+            let wScroll = $(window).scrollTop();
+
+            if(wScroll >= sec02_Top){
+                $('.sec02 .p_port').css({
+                    top: '120px',
+                });
+                $('.sec02 .p_port img').css({
+                    top: '0',
+                });
+            }else{
+                $('.sec02 .p_port').css({
+                    top: '40px',
+                });
+                $('.sec02 .p_port img').css({
+                    top: '12%',
+                });
+            }
+        }
+
     });
 
 
