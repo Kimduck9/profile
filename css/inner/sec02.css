@@ -1,167 +1,506 @@
-#sec02{width: 100%; height: 900px; background-color: var(--sec02); position: relative;}
-.sec02 .info{
+#sec02 {
+    width: 100%;
+    height: 900px;
+    background-color: var(--sec02);
+    position: relative;
+}
+
+.sec02 .info {
     width: calc(100% / 2);
     float: left;
     height: 100%;
     padding-top: 6%;
     cursor: default;
 }
-.sec02 .info h2{font-weight: bold; font-size: 40px; text-shadow: 0px 4px 2px var(--active_on);}
+
+.sec02 .info h2 {
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 0px 4px 2px var(--active_on);
+}
 
 
-.sec02 .left{padding-left: 7%;}
-.sec02 .left .me{margin-bottom: 5%;}
-.sec02 .left .me3{display: none; margin-bottom: 0;}
-.sec02 .left .me .txt{color: var(--black900); font-family: var(--font_NUM); line-height: 1.6;}
-.sec02 .left .me .txt span{display: block; font-size: 16px; text-shadow: 0px 0px 1px var(--black300);}
+.sec02 .left {
+    padding-left: 7%;
+}
+
+.sec02 .left .me {
+    margin-bottom: 5%;
+}
+
+.sec02 .left .me3 {
+    display: none;
+    margin-bottom: 0;
+}
+
+.sec02 .left .me .txt {
+    color: var(--black900);
+    font-family: var(--font_NUM);
+    line-height: 1.6;
+}
+
+.sec02 .left .me .txt span {
+    display: block;
+    font-size: 16px;
+    text-shadow: 0px 0px 1px var(--black300);
+}
+
 /* .sec02 .left .me .txt span.yeah{text-shadow: 0px 0px 1px var(--port02_C); font-weight: bold; font-size: 18px; padding: 1% 0;} */
-.sec02 .left .me .none{display: none;}
-.sec02 .left .me2 ul li{margin-top: 1%; position: relative; padding-left: 16px; font-weight: bold;}
-.sec02 .left .me2 ul li::before{
+.sec02 .left .me .none {
+    display: none;
+}
+
+.sec02 .left .me2 ul li {
+    margin-top: 1%;
+    position: relative;
+    padding-left: 16px;
+    font-weight: bold;
+}
+
+.sec02 .left .me2 ul li::before {
     content: "";
-    width: 5px; height: 5px; background-color: var(--port02_C);
-    position: absolute; left: 2px; top: 50%; transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    background-color: var(--port02_C);
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
     border-radius: 50%;
 }
 
-.sec02 .right{text-align: right; padding-right: 8%;}
-.sec02 .right .txt > ul > li{margin-bottom: 24px;}
-.sec02 .right .txt > ul > li > b{
-    font-size: 22px; 
+.sec02 .right {
+    text-align: right;
+    padding-right: 8%;
+}
+
+.sec02 .right .txt>ul>li {
+    margin-bottom: 24px;
+}
+
+.sec02 .right .txt>ul>li>b {
+    font-size: 22px;
     letter-spacing: -0.8px;
     color: var(--black10);
     text-shadow: 0px 1px 1px var(--port02_C);
 }
-.sec02 .right .txt > ul > li ul li{font-size: 17px; font-family: var(--font_NUM);}
-.sec02 .right .txt > ul > li .Skill{transform-origin: right;}
-.sec02 .right .txt > ul > li .Skill li{font-size: 15px; font-family: var(--font_ENG);}
-.sec02 .right .txt > ul > li .Skill li span{display: inline-block; width: 300px; background-color: transparent; border-radius: 30px; padding: 1px 10px 3px 0px; position: relative; border: 1px solid var(--black300); overflow: hidden; cursor: pointer; transition: all 0.4s;}
-.sec02 .right .txt > ul > li .Skill li span::before{
-    width: 0%; height: 100%;
-    position: absolute; right: -50%; top: 0;
-    background-color: var(--active); border-radius: 30px;
+
+.sec02 .right .txt>ul>li ul li {
+    font-size: 17px;
+    font-family: var(--font_NUM);
+}
+
+.sec02 .right .txt>ul>li .Skill {
+    transform-origin: right;
+}
+
+.sec02 .right .txt>ul>li .Skill li {
+    font-size: 15px;
+    font-family: var(--font_ENG);
+}
+
+.sec02 .right .txt>ul>li .Skill li span {
+    display: inline-block;
+    width: 300px;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 1px 10px 3px 0px;
+    position: relative;
+    border: 1px solid var(--black300);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.sec02 .right .txt>ul>li .Skill li span::before {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    right: -50%;
+    top: 0;
+    background-color: var(--active);
+    border-radius: 30px;
     padding: 1px 7% 0 0;
     transition: all 0.6s;
 }
-.sec02 .right .txt > ul > li .Skill li.li1 span::before{content: "HTML : 100%";}
-.sec02 .right .txt > ul > li .Skill li.li2 span::before{content: "CSS : 100%";}
-.sec02 .right .txt > ul > li .Skill li.li3 span::before{content: "React : 80%";}
-.sec02 .right .txt > ul > li .Skill li.li4 span::before{content: "JQuery : 90%";}
-.sec02 .right .txt > ul > li .Skill li.li5 span::before{content: "JavaScript : 85%";}
-.sec02 .right .txt > ul > li .Skill li.li6 span::before{content: "Illustrator : 80%";}
-.sec02 .right .txt > ul > li .Skill li.li7 span::before{content: "Photoshop : 95%";}
-.sec02 .right .txt > ul > li .Skill li.li8 span::before{content: "Figma 90%";}
 
-.sec02 .right .txt > ul > li .Skill li span:hover::before{color: var(--black); right: 0; font-weight: bold;}
-.sec02 .right .txt > ul > li .Skill li.li1 span:hover::before,
-.sec02 .right .txt > ul > li .Skill li.li2 span:hover::before{width: 100%;}
-.sec02 .right .txt > ul > li .Skill li.li3 span:hover::before,
-.sec02 .right .txt > ul > li .Skill li.li6 span:hover::before{width: 80%;}
-.sec02 .right .txt > ul > li .Skill li.li4 span:hover::before,
-.sec02 .right .txt > ul > li .Skill li.li8 span:hover::before{width: 90%;}
-.sec02 .right .txt > ul > li .Skill li.li5 span:hover::before{width: 85%;}
-.sec02 .right .txt > ul > li .Skill li.li7 span:hover::before{width: 95%;}
-
-
-.sec02 .p_port{width:400px; height: 710px; position: absolute; left:51%; top:110px; transform: translateX(-50%); z-index: 2;}
-.sec02 .p_port img{position: absolute; left: 0; top: 0; width: 100%;}
-
-
-
-
-@media(max-width:1460px){
-    .sec02 .left{padding-left: 2%;}
-    .sec02 .right{padding-right: 4%;}
-    .sec02 .left .me .txt span em{font-size: 15px;}
-    .sec02 .p_port{width:380px; height: 690px;}
-    .sec02 .p_port img{width: 100%; height: 100%;}
+.sec02 .right .txt>ul>li .Skill li.li1 span::before {
+    content: "HTML5 : 100%";
 }
-@media(max-width:1280px){
-    .sec02 .info h2{font-size: 36px;}
-    .sec02 .left .me{margin-bottom: 3%;}
-    .sec02 .left .me3{display: block;}
-    .sec02 .left .me3 span{font-weight: bold; font-size: 15px;}
-    .sec02 .left .me .txt{line-height: 1.4;}
+
+.sec02 .right .txt>ul>li .Skill li.li2 span::before {
+    content: "CSS : 100%";
+}
+
+.sec02 .right .txt>ul>li .Skill li.li3 span::before {
+    content: "React : 80%";
+}
+
+.sec02 .right .txt>ul>li .Skill li.li4 span::before {
+    content: "Jquery : 90%";
+}
+
+.sec02 .right .txt>ul>li .Skill li.li5 span::before {
+    content: "JavaScript : 85%";
+}
+
+.sec02 .right .txt>ul>li .Skill li.li6 span::before {
+    content: "Illustrator : 80%";
+}
+
+.sec02 .right .txt>ul>li .Skill li.li7 span::before {
+    content: "Photoshop : 95%";
+}
+
+.sec02 .right .txt>ul>li .Skill li.li8 span::before {
+    content: "Figma 90%";
+}
+
+.sec02 .right .txt>ul>li .Skill li span:hover::before {
+    color: var(--black);
+    right: 0;
+    font-weight: bold;
+}
+
+.sec02 .right .txt>ul>li .Skill li.li1 span:hover::before,
+.sec02 .right .txt>ul>li .Skill li.li2 span:hover::before {
+    width: 100%;
+}
+
+.sec02 .right .txt>ul>li .Skill li.li3 span:hover::before,
+.sec02 .right .txt>ul>li .Skill li.li6 span:hover::before {
+    width: 80%;
+}
+
+.sec02 .right .txt>ul>li .Skill li.li4 span:hover::before,
+.sec02 .right .txt>ul>li .Skill li.li8 span:hover::before {
+    width: 90%;
+}
+
+.sec02 .right .txt>ul>li .Skill li.li5 span:hover::before {
+    width: 85%;
+}
+
+.sec02 .right .txt>ul>li .Skill li.li7 span:hover::before {
+    width: 95%;
+}
+
+
+.sec02 .p_port {
+    width: 400px;
+    height: 710px;
+    position: absolute;
+    left: 51%;
+    top: 110px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.sec02 .p_port img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+
+
+
+@media(max-width:1460px) {
+    .sec02 .left {
+        padding-left: 2%;
+    }
+
+    .sec02 .right {
+        padding-right: 4%;
+    }
+
+    .sec02 .left .me .txt span em {
+        font-size: 15px;
+    }
+
+    .sec02 .p_port {
+        width: 380px;
+        height: 690px;
+    }
+
+    .sec02 .p_port img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media(max-width:1280px) {
+    .sec02 .info h2 {
+        font-size: 36px;
+    }
+
+    .sec02 .left .me {
+        margin-bottom: 3%;
+    }
+
+    .sec02 .left .me3 {
+        display: block;
+    }
+
+    .sec02 .left .me3 span {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .sec02 .left .me .txt {
+        line-height: 1.4;
+    }
+
     .sec02 .left .me .txt span,
     .sec02 .left .me .txt span b,
-    .sec02 .left .me2 ul li{font-size: 15px;}
-   
-    .sec02 .right .txt > ul > li > b{font-size: 18px; letter-spacing: -0.9px;}
-    .sec02 .right .txt > ul > li ul li{font-size: 15px;}
-    .sec02 .right .txt > ul > li .Skill li span::before{font-size: 14px; padding: 2px 7% 0 0;}
-    .sec02 .p_port{width:320px; height: 600px;}
+    .sec02 .left .me2 ul li {
+        font-size: 15px;
+    }
+
+    .sec02 .right .txt>ul>li>b {
+        font-size: 18px;
+        letter-spacing: -0.9px;
+    }
+
+    .sec02 .right .txt>ul>li ul li {
+        font-size: 15px;
+    }
+
+    .sec02 .right .txt>ul>li .Skill li span::before {
+        font-size: 14px;
+        padding: 2px 7% 0 0;
+    }
+
+    .sec02 .p_port {
+        width: 320px;
+        height: 600px;
+    }
 
 }
-@media(max-width:1024px){
-    #sec02{height: 1300px;}
-    .sec02{height: 100%;}
-    .sec02 .info{width: 100%; height: 50%;}
-    .sec02 .left{padding-left: 7%;}
-    .sec02 .left .me2 ul li{margin-top: 2px}
-    .sec02 .right{text-align: left; padding-left: 7%; padding-top: 1%;}
-    .sec02 .right .txt > ul > li{margin-bottom: 3%;}
-    .sec02 .right .txt > ul > li .Skill{transform-origin: left; margin-top: 6px;}
-    .sec02 .right .txt > ul > li .Skill li span{width: 280px; padding: 1px 0px 3px 10px;}
-    .sec02 .right .txt > ul > li .Skill li span::before{
-        position: absolute; right: 0%; left: -100%; top: 0;
+
+@media(max-width:1024px) {
+    #sec02 {
+        height: 1300px;
+    }
+
+    .sec02 {
+        height: 100%;
+    }
+
+    .sec02 .info {
+        width: 100%;
+        height: 50%;
+    }
+
+    .sec02 .left {
+        padding-left: 7%;
+    }
+
+    .sec02 .left .me2 ul li {
+        margin-top: 2px
+    }
+
+    .sec02 .right {
+        text-align: left;
+        padding-left: 7%;
+        padding-top: 1%;
+    }
+
+    .sec02 .right .txt>ul>li {
+        margin-bottom: 3%;
+    }
+
+    .sec02 .right .txt>ul>li .Skill {
+        transform-origin: left;
+        margin-top: 6px;
+    }
+
+    .sec02 .right .txt>ul>li .Skill li span {
+        width: 280px;
+        padding: 1px 0px 3px 10px;
+    }
+
+    .sec02 .right .txt>ul>li .Skill li span::before {
+        position: absolute;
+        right: 0%;
+        left: -100%;
+        top: 0;
         padding: 2px 0 0 7%;
     }
 
-    .sec02 .p_port{position: sticky; transform: translateX(0%); left: 63%; top: 40px; width:300px; height: 560px;}
-    .sec02 .p_port img{top: 12%;}
-    
-    .sec02 .right .txt > ul > li .Skill li span:hover::before{left: 0;}
+    .sec02 .p_port {
+        position: sticky;
+        transform: translateX(0%);
+        left: 63%;
+        top: 40px;
+        width: 300px;
+        height: 560px;
+    }
+
+    .sec02 .p_port img {
+        top: 12%;
+    }
+
+    .sec02 .right .txt>ul>li .Skill li span:hover::before {
+        left: 0;
+    }
 }
 
-@media(max-width:780px){
-    #sec02{height: 1250px;}
-    .sec02 .info{height: auto; padding-left: 6%;}
-    .sec02 .info h2{font-size: 32px;}
+@media(max-width:780px) {
+    #sec02 {
+        height: 1250px;
+    }
+
+    .sec02 .info {
+        height: auto;
+        padding-left: 6%;
+    }
+
+    .sec02 .info h2 {
+        font-size: 32px;
+    }
+
     .sec02 .left .me .txt span,
-    .sec02 .left .me2 ul li{font-size: 14px;}
-    .sec02 .p_port{left: 62%; width:260px; height: 480px;}
+    .sec02 .left .me2 ul li {
+        font-size: 14px;
+    }
+
+    .sec02 .p_port {
+        left: 62%;
+        width: 260px;
+        height: 480px;
+    }
 }
-@media(max-width:640px){
-    #sec02{height: 1050px;}
-    .sec02 .p_port{display: none;}
+
+@media(max-width:640px) {
+    #sec02 {
+        height: 1050px;
+    }
+
+    .sec02 .p_port {
+        display: none;
+    }
+
     .sec02 .left .me1 .txt span:nth-of-type(3),
-    .sec02 .left .me1 .txt span:nth-of-type(4){display: inline-block;}
-    .sec02 .left .me2 ul li{width: 45%; display: inline-block; margin-bottom: 1%;}
-    .sec02 .left .me2 ul li:nth-of-type(2n){margin-left: 5%;}
-    .sec02 .right .txt ul{margin-bottom: 5%;}
-    .sec02 .right .txt ul li.mine{width: 45%; display: inline-block;}
-    .sec02 .right .txt ul li.mine:nth-of-type(2n){margin-left: 5%;}
-    .sec02 .right .txt > ul > li .Skill li span{width: 330px; font-size: 14px;}
+    .sec02 .left .me1 .txt span:nth-of-type(4) {
+        display: inline-block;
+    }
+
+    .sec02 .left .me2 ul li {
+        width: 45%;
+        display: inline-block;
+        margin-bottom: 1%;
+    }
+
+    .sec02 .left .me2 ul li:nth-of-type(2n) {
+        margin-left: 5%;
+    }
+
+    .sec02 .right .txt ul {
+        margin-bottom: 5%;
+    }
+
+    .sec02 .right .txt ul li.mine {
+        width: 45%;
+        display: inline-block;
+    }
+
+    .sec02 .right .txt ul li.mine:nth-of-type(2n) {
+        margin-left: 5%;
+    }
+
+    .sec02 .right .txt>ul>li .Skill li span {
+        width: 330px;
+        font-size: 14px;
+    }
 }
 
-@media(max-width:550px){
-    #sec02{height: 1030px;}
-    .sec02 .info{height: auto; padding-left: 5%;}
-    .sec02 .left .me2 ul li{width: 48%;}
-    .sec02 .left .me2 ul li:nth-of-type(2n){margin-left: 2%;}
+@media(max-width:550px) {
+    #sec02 {
+        height: 1030px;
+    }
+
+    .sec02 .info {
+        height: auto;
+        padding-left: 5%;
+    }
+
+    .sec02 .left .me2 ul li {
+        width: 48%;
+    }
+
+    .sec02 .left .me2 ul li:nth-of-type(2n) {
+        margin-left: 2%;
+    }
 }
 
-@media(max-width:510px){
-    #sec02{height: 1250px;}
-    .sec02 .left .me2 ul li{width: 100%;}
-    .sec02 .left .me2 ul li:nth-of-type(2n){margin-left: 0%;}
-    .sec02 .right .txt ul{margin-bottom: 3%;}
-    .sec02 .right .txt ul li.mine{width: 100%;}
-    .sec02 .right .txt ul li.mine:nth-of-type(2n){margin-left: 0%;}
+@media(max-width:510px) {
+    #sec02 {
+        height: 1250px;
+    }
+
+    .sec02 .left .me2 ul li {
+        width: 100%;
+    }
+
+    .sec02 .left .me2 ul li:nth-of-type(2n) {
+        margin-left: 0%;
+    }
+
+    .sec02 .right .txt ul {
+        margin-bottom: 3%;
+    }
+
+    .sec02 .right .txt ul li.mine {
+        width: 100%;
+    }
+
+    .sec02 .right .txt ul li.mine:nth-of-type(2n) {
+        margin-left: 0%;
+    }
 }
 
-@media(max-width:500px){
-    #sec02{height: 1150px;}
-    .sec02 .info h2{font-size: 28px;}
-    .sec02 .left .me .txt span{font-size: 13px;}
-    .sec02 .left .me .txt span b{font-size: 14px;}
-    .sec02 .left .me2 ul li{font-size: 13px; margin-bottom: 0;}
-    .sec02 .right .txt ul{margin-bottom: 1.5%;}
+@media(max-width:500px) {
+    #sec02 {
+        height: 1150px;
+    }
+
+    .sec02 .info h2 {
+        font-size: 28px;
+    }
+
+    .sec02 .left .me .txt span {
+        font-size: 13px;
+    }
+
+    .sec02 .left .me .txt span b {
+        font-size: 14px;
+    }
+
+    .sec02 .left .me2 ul li {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    .sec02 .right .txt ul {
+        margin-bottom: 1.5%;
+    }
+
     /* .sec02 .right .txt > ul > li > b{font-size: 16px;} */
-    .sec02 .right .txt > ul > li ul li{font-size: 14px;}
+    .sec02 .right .txt>ul>li ul li {
+        font-size: 14px;
+    }
 }
 
-@media(max-width:380px){
-    .sec02 .right .txt > ul > li .Skill li span{width: 270px; font-size: 13px;}
-    .sec02 .right .txt > ul > li .Skill li span::before{padding: 1px 0 0 7%; font-size: 14px;}
+@media(max-width:380px) {
+    .sec02 .right .txt>ul>li .Skill li span {
+        width: 270px;
+        font-size: 13px;
+    }
+
+    .sec02 .right .txt>ul>li .Skill li span::before {
+        padding: 1px 0 0 7%;
+        font-size: 14px;
+    }
 }
